@@ -151,7 +151,33 @@ void fillPolygon(const std::vector<Vertex>& vertices, const Color& color) {
 }
 
 void render() {
-    
+    // fourth polygon
+    std::vector<Vertex> polygon4 = {
+      Vertex(413.0f, 177.0f),
+      Vertex(448.0f, 159.0f),
+      Vertex(502.0f, 88.0f),
+      Vertex(553.0f, 53.0f),
+      Vertex(535.0f, 36.0f),
+      Vertex(676.0f, 37.0f),
+      Vertex(660.0f, 52.0f),
+      Vertex(750.0f, 145.0f),
+      Vertex(761.0f, 179.0f),
+      Vertex(672.0f, 192.0f),
+      Vertex(659.0f, 214.0f),
+      Vertex(615.0f, 214.0f),
+      Vertex(632.0f, 230.0f),
+      Vertex(580.0f, 230.0f),
+      Vertex(597.0f, 215.0f),
+      Vertex(552.0f, 214.0f),
+      Vertex(517.0f, 144.0f),
+      Vertex(466.0f, 180.0f)
+  };
+
+
+  Color pColor4(255, 255, 255);  // Color blanco para el polígono
+  Color pFill4(0,255,0);
+  fillPolygon(polygon4, pFill4);
+  drawPolygon(polygon4, pColor4);
 }
 
 int main() {
