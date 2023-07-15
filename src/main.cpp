@@ -172,12 +172,22 @@ void render() {
       Vertex(517.0f, 144.0f),
       Vertex(466.0f, 180.0f)
   };
-
-
-  Color pColor4(255, 255, 255);  // Color blanco para el polígono
+  Color pColor4(255, 255, 255);
   Color pFill4(0,255,0);
   fillPolygon(polygon4, pFill4);
   drawPolygon(polygon4, pColor4);
+
+  // fifth polygon
+  std::vector<Vertex> polygon5 = {
+      Vertex(682.0f, 175.0f),
+      Vertex(708.0f, 120.0f),
+      Vertex(735.0f, 148.0f),
+      Vertex(739.0f, 170.0f)
+  };
+  Color pColor5(255, 255, 255);
+  Color pFill5(0,0,0);
+  fillPolygon(polygon5, pFill5);
+  drawPolygon(polygon5, pColor5);
 }
 
 int main() {
