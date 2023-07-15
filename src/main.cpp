@@ -172,7 +172,7 @@ void render() {
     fillPolygon(polygon1, pFill);
     drawPolygon(polygon1, pColor);
   
-      // second polygon
+    // second polygon
     std::vector<Vertex> polygon2 = {
         Vertex(321.0f, 335.0f),
         Vertex(288.0f, 286.0f),
@@ -184,6 +184,18 @@ void render() {
     Color pFill2(0,0,255);
     fillPolygon(polygon2, pFill2);
     drawPolygon(polygon2, pColor2);
+  
+  // third polygon
+  std::vector<Vertex> polygon3 = {
+    Vertex(377.0f, 249.0f),
+    Vertex(411.0f, 197.0f),
+    Vertex(436.0f, 249.0f)
+  };
+
+  Color pColor3(255, 255, 255);  // Color blanco para el polígono
+  Color pFill3(255,0,0);
+  fillPolygon(polygon3, pFill3);
+  drawPolygon(polygon3, pColor3);
 }
 
 int main() {
